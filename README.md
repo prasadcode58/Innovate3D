@@ -9,24 +9,24 @@ Hero page of this project is on another repo,
 
 # Pre - requisites
 
-this project uses,
+this project uses
 
 - [react.js](https://react.dev/)
 
 - [nodejs](https://nodejs.org/en)
 
-- [Google Firebase](https://firebase.google.com/)
+- [Google Firebase](https://firebase.google.com/docs)
 
 - [Blender](https://www.blender.org/) (used to create assets used in project)
 
-# Load missing assets,
+# Load missing assets
 
 Too large assets are stored on google drive, download them from and put them in desired locations.
 (means locations where missing assets.txt exists in projet assets sub-folders.)
 
 [Get Assets Here](https://drive.google.com/drive/folders/1v-56Jl7OHwCsQd8nC9RDKb1IZ5q1QwZ0?usp=sharing)
 
-# Running Locally,
+# Running Locally
 
 To run this project on live server, run
 
@@ -38,7 +38,7 @@ after running project locally, add \login after localhost:3000 in browser's addr
 
 example - `localhost:3000/login`
 
-# Build for deploy,
+# Build for deploy
 
 To build this file, run
 
