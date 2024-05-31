@@ -1,6 +1,12 @@
 # Innovate3D
 A 3D social media site for 3D modeling artists.
 
+# Disclaimer**
+
+Hero page of this project is on another repo,
+
+- [Innovate 3D Hero Page](https://github.com/prasadcode58/Innovate3D-Hero-Page)
+
 # Pre - requisites
 
 this project uses,
@@ -27,6 +33,10 @@ To run this project on live server, run
 `npm install i`
 
 `npm start`
+
+after running project locally, add \login after localhost:3000 in browser's address bar
+
+example - `localhost:3000/login`
 
 # Build for deploy,
 
