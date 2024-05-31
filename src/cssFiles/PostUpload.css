@@ -1,0 +1,275 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: gilroy;
+    src: url('../fonts/Gilroy.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: gilroyBolder;
+    src: url('../fonts/gilroyBolder.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: gilroyBold;
+    src: url('../fonts/gilroyBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: gilroyMedium;
+    src: url('../fonts/gilroyMedium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: gilroyBoldest;
+    src: url('../fonts/gilroyBoldest.ttf') format('truetype');
+}
+@font-face {
+    font-family: gilroyThin;
+    src: url('../fonts/gilroyThin.ttf') format('truetype');
+}
+@font-face {
+    font-family: gilroyLight;
+    src: url('../fonts/gilroyLight.ttf') format('truetype');
+}
+
+.post_wrapper{
+    background-attachment: fixed;
+    background: linear-gradient(180deg, #32323C 0%, #0A0A14 100%);
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+}
+
+.nav{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 6.25rem;
+    background-color: #1E1E28;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8.75rem;
+}
+
+#upload_progress_text{
+    font-size: 1.5rem;
+    color: #F2B500;
+    font-family: gilroyBold;
+}
+
+.post_mid_options{
+    display: flex;
+    position: absolute;
+    left: 42%;
+    color: white;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+#post_site_logo{
+    width: 4rem;
+    color: white;
+    cursor: pointer;
+}
+
+#post_logo_text{
+    font-family: gilroyBold;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+#upload_completed_text{
+    display: flex;
+    font-size: 1.5rem;
+    align-items: center;
+    color: white;
+    font-family: gilroyBold;
+    gap: 1rem;
+}
+
+#redirect_btn{
+    background-color: #F7D56F;
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    color: #32323C;
+}
+
+#logo{
+    font-family: gilroyBold;
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+}
+
+.content_container{
+    position: relative;
+    font-family: gilroyMedium;
+    height: 100%;
+    width: 100%;
+    padding-top: 7.25rem;
+}
+
+#upload_cancel_btn{
+    all: initial;
+    position: absolute;
+    top: 8rem;
+    right: 3rem;
+    z-index: 1;
+    color: white;
+}
+
+.main_container{
+    width: 102.5rem;
+    height: 49rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 1rem;
+}
+
+#title_text{
+    all: initial;
+    width: 68rem;
+    height: 3.8125rem;
+    font-size: 2rem;
+    font-family: gilroyBold;
+    color: #F7D56F;
+    text-align: center;
+    background-color: #32323C;
+    border-radius: 1rem;
+}
+
+.upload_section{
+    display: flex;
+    width: 101.5rem;
+    gap: 1rem;
+}
+
+.thumbnail_side{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 50.75rem;
+    height: 35.8125rem;
+    background-color: #32323C;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+}
+
+#thumbnail_upload{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.upload_headings{
+    font-size: 2rem;
+    color: white;
+    font-family: gilroyLight;
+    margin-bottom: 2rem;
+}
+
+.upload_logos{
+    margin-bottom: 3rem;
+}
+
+.upload_supply_text{
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+    font-family: gilroyLight;
+}
+
+.thumbnail_side label{
+    font-size: 1rem;
+    color: #F7D56F;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.model_side{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 50.75rem;
+    height: 35.8125rem;
+    background-color: #32323C;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+}
+
+.model_side label{
+    font-size: 1rem;
+    color: #F7D56F;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#model_upload{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.upload_preview{
+    max-width: 18.75rem;
+    max-height: 12.5rem;
+    overflow: hidden;
+    border-radius: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+#desc_text{
+    all: initial;
+    width: 85.25rem;
+    height: 6.25rem;
+    font-size: 1rem;
+    font-family: gilroyBold;
+    color: #F7D56F;
+    text-align: center;
+    background-color: #32323C;
+    border-radius: 1rem;
+    overflow-wrap: break-word;
+    overflow-y: auto;
+}
+#upload_btn{
+    all: initial;
+    position: absolute;
+    bottom: 6rem;
+    right: 6rem;
+    z-index: 1;
+    font-size: 2rem;
+    font-family: gilroyBold;
+    background-color: #F2B500;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+#UploadThreeJsCanvas {
+     max-width: 18.75rem;
+    max-height: 12.5rem;
+    overflow: hidden;
+    border-radius: 1rem;
+    margin-bottom: 1.25rem;
+    z-index: 2;
+}

@@ -1,0 +1,249 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: gilroy;
+  src: url('../fonts/Gilroy.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: gilroyBolder;
+  src: url('../fonts/gilroyBolder.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: gilroyBold;
+  src: url('../fonts/gilroyBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: gilroyMedium;
+  src: url('../fonts/gilroyMedium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: gilroyBoldest;
+  src: url('../fonts/gilroyBoldest.ttf') format('truetype');
+}
+@font-face {
+  font-family: gilroyThin;
+  src: url('../fonts/gilroyThin.ttf') format('truetype');
+}
+@font-face {
+  font-family: gilroyLight;
+  src: url('../fonts/gilroyLight.ttf') format('truetype');
+}
+
+.mainscreen_wrapper{
+  position: relative;
+  background-attachment: fixed;
+  background-color: #0A0A14;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#model_back_btn{
+  all: initial;
+  position: absolute;
+  left: 4rem;
+  top: 2rem;
+  z-index: 2;
+}
+
+.mainscreen_nav{
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 6.25rem;
+  background-color: #1E1E28;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8.75rem;
+}
+
+.mainscreen_logo_set{
+  display: flex;
+  color: white;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+#mainscreen_site_logo{
+  width: 4rem;
+  color: white;
+  cursor: pointer;
+}
+
+#mainscreen_logo_text{
+  font-family: gilroyBold;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.mainscreen_content_container{
+  font-family: gilroyMedium;
+  height: 100%;
+  width: 100%;
+  padding-top: 7.25rem;
+}
+
+.mainscreen_main_container{
+  width: 102.5rem;
+  height: 49rem;
+  margin: 0 auto;
+  display: flex;
+}
+
+.mainscreen_left_section{
+  position: relative;
+  height: 100%;
+  width: 59.375rem;
+  background-color: #32323C;
+  border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+  margin-right: 1rem;
+}
+
+#myThreeJsCanvas {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+}
+
+.mainscreen_model_reaction_btns{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 4.75rem;
+  height: 9.6875rem;
+  background-color: #6A6A80;
+  border-bottom-left-radius: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+#mainscreen_model_like_btn{
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #F2B500;
+}
+
+#mainscreen_model_comm_btn{
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #F2B500;
+
+}
+
+#mainscreen_model_bmk_btn{
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #F2B500;
+
+}
+
+.mainscreen_right_section{
+  height: 100%;
+  width: 42.125rem;
+}
+
+.mainscreen_info_container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+}
+
+.mainscreen_user_info{
+  width: 100%;
+  height: 9.6875rem;
+  background-color: #32323c;
+  border-top-right-radius: 3rem;
+  padding: 1.5rem 2rem;
+}
+
+.mainscreen_desc_container{
+  width: 100%;
+  height: 39.3125rem;
+  background-color: #1E1E28;
+  border-bottom-right-radius: 3rem;
+}
+
+#mainscreen_model_title{
+  color: white;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+.mainscreen_details{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mainscreen_user_profile_sec{
+  display: flex;
+  gap: 1rem;
+}
+
+#mainscreen_profile_pic{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+#mainscreen_user_name{
+  font-size: 1.5rem;
+  color: white;
+  align-self: center;
+  font-family: gilroyLight;
+  cursor: pointer;
+}
+
+#mainscreen_follow_btn{
+  all: initial;
+  font-size: 1.2rem;
+  font-family: gilroyBold;
+  color: black;
+  background: linear-gradient(180deg, #F7D56F 0%, #F2B500 100%);
+  padding: 0.75rem 1.75rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.mainscreen_desc_container{
+  padding: 1.5rem 2rem;
+  overflow-y: auto;
+}
+
+#mainscreen_desc_head{
+  font-size: 1.15rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+#mainscreen_desc_text_layout{
+  font-size: 1rem;
+  font-family: gilroy;
+  line-height: 1.3rem;
+  color: white;
+}
+
+#mainscreen_desc_text{
+  overflow-wrap: break-word;
+}

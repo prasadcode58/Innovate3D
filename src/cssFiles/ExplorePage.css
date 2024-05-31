@@ -1,0 +1,322 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: gilroy;
+    src: url('../fonts/Gilroy.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: gilroyBolder;
+    src: url('../fonts/gilroyBolder.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: gilroyBold;
+    src: url('../fonts/gilroyBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: gilroyMedium;
+    src: url('../fonts/gilroyMedium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: gilroyBoldest;
+    src: url('../fonts/gilroyBoldest.ttf') format('truetype');
+}
+@font-face {
+    font-family: gilroyThin;
+    src: url('../fonts/gilroyThin.ttf') format('truetype');
+}
+@font-face {
+    font-family: gilroyLight;
+    src: url('../fonts/gilroyLight.ttf') format('truetype');
+}
+
+.explore_wrapper{
+    background-attachment: fixed;
+    background: linear-gradient(180deg, #32323C 0%, #0A0A14 100%);
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.explore_nav{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 6.25rem;
+    background-color: #1E1E28;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8.75rem;
+}
+
+.explore_left_options{
+    display: flex;
+    color: white;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+#explore_site_logo{
+    width: 4rem;
+    color: white;
+    cursor: pointer;
+}
+
+#explore_logo_text{
+    font-family: gilroyBold;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+.explore_right_options{
+    display: flex;
+    color: white;
+    gap: 1rem;
+}
+
+.explore_choose_btns{
+    display: flex;
+    font-family: gilroy;
+    font-size: 1rem;
+    gap: 1.5rem;
+}
+
+#blog_btn{
+    all: initial;
+    font-family: gilroyBold;
+    cursor: pointer;
+    color: white;
+}
+
+#learn_btn{
+    all: initial;
+    font-family: gilroyBold;
+    cursor: pointer;
+    color: white;
+}
+
+#categories_btn{
+    all: initial;
+    font-family: gilroyBold;
+    cursor: pointer;
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    align-self: center;
+}
+
+.dropdown-container {
+    border: 3px solid #F2B500;
+    opacity: 0;
+    position: absolute;
+    top: 200%;
+    left: 0;
+    background-color: rgb(26, 26, 26);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 1.5rem;
+    z-index: 1;
+    transition: opacity 0.2s ease-in-out;
+
+}
+
+.dropdown-option {
+    padding: 12px 16px;
+    text-decoration: none;
+    border-radius: 1.5rem;
+    font-family: gilroyMedium;
+    display: block;
+    color: white;
+    transform: translateY(-10px);
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.dropdown-option:hover {
+    background-color: #F2B500;
+    color: black;
+    transition: all ease 0.3s;
+}
+
+.dropdown:hover .dropdown-container {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.dropdown:hover .dropdown-option {
+    transform: translateY(0);
+}
+
+#explore_share_btn{
+    all: initial;
+    font-family: gilroyBold;
+    background-color: #F2B500;
+    padding: 0.8rem 2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: solid 4px transparent;
+    position: relative;
+    z-index: 1;
+}
+
+#explore_share_btn::before {
+    content: "";
+    border-radius: 2rem;
+    position: absolute;
+    background-color: #212121;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: all 0.5s;
+  }
+#explore_share_btn:hover::before {
+    transform: scaleX(1);
+  }
+#explore_share_btn:hover {
+    border: solid 4px #F2B500;
+    color: #f2f2f2;
+  }
+
+  #explore_logout_btn{
+    all: initial;
+    font-family: gilroyBold;
+    background-color: #f2f2f2;
+    padding: 0.8rem 2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: solid 4px transparent;
+    position: relative;
+    z-index: 1;
+}
+
+#explore_logout_btn::before {
+    content: "";
+    border-radius: 2rem;
+    position: absolute;
+    background-color: #F23030;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: all 0.5s;
+  }
+#explore_logout_btn:hover::before {
+    transform: scaleX(1);
+  }
+#explore_logout_btn:hover {
+    border: solid 4px #f2f2f2;
+    color: #f2f2f2;
+  }
+
+.explore_choose_icons{
+    display: flex;
+    align-self: center;
+    gap: 1rem;
+}
+
+#explore_bell_icon{
+    all: initial;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: #f2f2f2;
+}
+#explore_profile_icon{
+    all: initial;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: #f2f2f2;
+}
+
+.explore_section{
+    font-family: gilroyMedium;
+    height: 100%;
+    width: 104.6875rem;
+    margin: 0 auto;
+    padding-top: 7.25rem;
+}
+
+.explore_model_showcase{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-bottom: 7.25rem;
+}
+
+.explore_model_card{
+    width: 33.5rem;
+    height: 21.5625rem;
+    object-fit: cover;
+    position: relative;
+    border-radius: 0.625rem;
+    overflow: hidden;
+}
+
+.explore_model_card:hover{
+    transform: scale(1.03);
+    filter: drop-shadow(0 0 0.625rem #333);
+    transition: 0.3s;
+}
+
+.explore_model_card div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 2.5rem 2.5rem;
+    width: 100%;
+    height: 20%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+    opacity: 0;
+    border-radius: 0 0 0.625rem 0.625rem;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    transition: 0.3s;
+}
+
+.explore_model_card:hover div{
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+#thumbnail_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#explore_model_title{
+    color: white;
+}
+
+#explore_model_profile{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 2rem;
+    object-fit: cover;
+}

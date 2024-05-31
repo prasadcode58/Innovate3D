@@ -1,0 +1,404 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: gilroy;
+  src: url("../fonts/Gilroy.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: gilroyBolder;
+  src: url("../fonts/gilroyBolder.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: gilroyBold;
+  src: url("../fonts/gilroyBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: gilroyMedium;
+  src: url("../fonts/gilroyMedium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: gilroyBoldest;
+  src: url("../fonts/gilroyBoldest.ttf") format("truetype");
+}
+@font-face {
+  font-family: gilroyThin;
+  src: url("../fonts/gilroyThin.ttf") format("truetype");
+}
+@font-face {
+  font-family: gilroyLight;
+  src: url("../fonts/gilroyLight.ttf") format("truetype");
+}
+
+.welcome_wrapper {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  align-items: center;
+  justify-content: end;
+}
+
+.welcome_container {
+  display: flex;
+  position: absolute;
+  min-height: 30rem;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+  margin: 0 10rem;
+}
+
+#welcome_text {
+  font-size: 6rem;
+  font-family: gilroyBolder;
+  color: #f2b600;
+}
+
+#welcome_username {
+  font-size: 8rem;
+  font-family: gilroyBolder;
+  color: #f2f2f2;
+  margin-bottom: 2rem;
+}
+
+#welcome_explore_btn {
+  all: initial;
+  font-family: gilroyBold;
+  background-color: #f2f2f22d;
+  color: #f2b500;
+  font-size: 2.5rem;
+  padding: 0.8rem 2rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: solid 5px transparent;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 2rem;
+}
+
+#welcome_explore_btn::before {
+  content: "";
+  border-radius: 1.2rem;
+  position: absolute;
+  background-color: #f2f2f212;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: all 0.5s;
+}
+
+#welcome_explore_btn:hover::before {
+  transform: scaleX(1);
+}
+
+#welcome_explore_btn:hover {
+  border: solid 5px #f2b500;
+  color: #f2f2f2;
+}
+
+#welcome_share_btn {
+  all: initial;
+  font-family: gilroyBold;
+  background-color: #f2f2f2;
+  font-size: 2rem;
+  padding: 0.8rem 2rem;
+  border-radius: 1.5rem;
+  color: #f2b500;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: solid 5px transparent;
+  position: relative;
+  z-index: 1;
+}
+
+#welcome_share_btn::before {
+  content: "";
+  border-radius: 1.2rem;
+  position: absolute;
+  background-color: #f2b500;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: all 0.5s;
+}
+
+#welcome_share_btn:hover::before {
+  transform: scaleX(1);
+}
+
+#welcome_share_btn:hover {
+  border: solid 5px #f2f2f2;
+  color: #f2f2f2;
+}
+
+#welcome_logout_btn {
+  all: initial;
+  display: flex;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  font-family: gilroyBold;
+  background-color: #212121;
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  color: #f2f2f2;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: solid 5px #f2b500;
+  z-index: 1;
+}
+
+#welcome_logout_btn::before {
+  content: "";
+  border-radius: 2rem;
+  position: absolute;
+  background-color: #ff5900b7;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: all 0.5s;
+}
+#welcome_logout_btn:hover::before {
+  transform: scaleX(1);
+}
+#welcome_logout_btn:hover {
+  border: solid 5px #f2f2f2;
+  color: #f2f2f2;
+}
+
+.login_wrapper {
+  display: flex;
+  position: relative;
+  /* background-attachment: fixed;
+    background-color: #0A0A14; */
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  align-items: center;
+  justify-content: end;
+}
+
+.login_logo_set {
+  display: flex;
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  z-index: 1;
+  color: white;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+#login_site_logo {
+  width: 4rem;
+  color: white;
+  cursor: pointer;
+}
+
+#login_logo_text {
+  font-family: gilroyBold;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the entire container */
+}
+
+.login_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33.5rem;
+  min-height: 38.8125rem;
+  margin: 0 5rem;
+  background: rgba(255, 255, 255, 0.43);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  padding: 2.5625rem;
+}
+
+#login_heading {
+  color: #f7b900;
+  font-family: gilroyBold;
+  font-size: 2rem;
+  margin-bottom: 1.5625rem;
+}
+
+#login_form {
+  width: 100%;
+}
+
+.login_top_headings {
+  font-size: 1rem;
+  color: #f2f2f2;
+  font-family: gilroyThin;
+}
+
+.login_input_fields {
+  all: initial;
+  font-family: gilroy;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  width: 96.5%;
+  height: 2.5rem;
+  caret-color: #a37a00;
+  margin-bottom: 0.875rem;
+  margin-top: 0.4375rem;
+  padding-left: 1rem;
+}
+
+/* #login_btn{
+    all: initial;
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    margin-top: 1rem;
+    background-color: #F7B500;
+    color: black;
+    font-family: gilroyBold;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    margin-bottom: 1.875rem;
+    cursor: pointer;
+} */
+
+#login_btn {
+  all: initial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 99%;
+  height: 3rem;
+  margin-top: 1rem;
+  font-family: gilroyBold;
+  background-color: #f2b500;
+  color: #212121;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: solid 4px transparent;
+  position: relative;
+  margin-bottom: 1.875rem;
+  z-index: 1;
+}
+
+#login_btn::before {
+  content: "";
+  border-radius: 0.5rem;
+  position: absolute;
+  background-color: #212121;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: all 0.5s;
+}
+#login_btn:hover::before {
+  transform: scaleX(1);
+}
+#login_btn:hover {
+  border: solid 4px #f2b500;
+  color: #f2f2f2;
+}
+
+#forget_password_btn {
+  color: #f2f2f2;
+  font-size: 1.5rem;
+  font-family: gilroy;
+  margin-bottom: 1.5625rem;
+}
+
+#signup_direct_text {
+  color: #f2f2f2;
+  font-size: 1.5rem;
+  font-family: gilroy;
+  margin-top: 1.5625rem;
+}
+
+#line_above_google_auth_login {
+  width: 100%;
+  height: 1px;
+  background-color: #313131;
+  margin-bottom: 0.9375rem;
+}
+
+#login_with_google_btn {
+  all: initial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 99%;
+  height: 4.75rem;
+  margin-top: 1rem;
+  font-family: gilroyBold;
+  background-color: #f2b500;
+  color: #212121;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: solid 4px transparent;
+  position: relative;
+  z-index: 1;
+}
+
+#login_with_google_btn::before {
+  content: "";
+  border-radius: 0.5rem;
+  position: absolute;
+  background-color: #212121;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: all 0.5s;
+}
+#login_with_google_btn:hover::before {
+  transform: scaleX(1);
+}
+#login_with_google_btn:hover {
+  border: solid 4px #f2b500;
+  color: #f2f2f2;
+}

@@ -1,0 +1,348 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: gilroy;
+    src: url('../fonts/Gilroy.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: gilroyBolder;
+    src: url('../fonts/gilroyBolder.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: gilroyBold;
+    src: url('../fonts/gilroyBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: gilroyMedium;
+    src: url('../fonts/gilroyMedium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: gilroyBoldest;
+    src: url('../fonts/gilroyBoldest.ttf') format('truetype');
+}
+@font-face {
+    font-family: gilroyThin;
+    src: url('../fonts/gilroyThin.ttf') format('truetype');
+}
+@font-face {
+    font-family: gilroyLight;
+    src: url('../fonts/gilroyLight.ttf') format('truetype');
+}
+
+.edit_prof_wrapper{
+    background-attachment: fixed;
+    background-color: #1e1e28;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.edit_prof_container{
+    display: flex;
+    width: 101.75rem;
+    height: 100vh;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+#edit_prof_back_btn{
+    all: initial;
+    position: absolute;
+    right: 4rem;
+    top: 2rem;
+    z-index: 1;
+    color: white;
+}
+
+.edit_prof_upper_half{
+    width: 63.5rem;
+    height: 30.25rem;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 2rem;
+    gap: 1rem;
+}
+
+.edit_prof_upper_left{
+    display: flex;
+    flex-direction: column;
+    width: 31.25rem;
+    height: 100%;
+    gap: 1rem;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+.edit_prof_image_sec{
+    width: 100%;
+    height: 80%;
+    color: black;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+#edit_prof_pic{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 2rem;
+}
+
+#edit_pic_btns{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    height: 17%;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom-left-radius: 2rem;
+}
+
+#edit_prof_pic_choose{
+    display: none;    
+}
+
+#edit_pic_btns label{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    align-items: center;
+    background-color: #F2B500;
+    /* padding: 1.95rem; */
+    padding: 1.3rem 2.7rem;
+    border-radius: 0.5rem;
+    font-family: gilroyBold;
+    font-size: 1.5rem;
+    border-bottom-left-radius: 2rem;
+    
+    cursor: pointer;
+    color: #212121;
+}
+
+#save_prof_image_btn{
+    all: initial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: gilroyBold;
+    background-color: #F2B500;
+    color: #212121;
+    font-size: 1.5rem;
+    padding: .9rem 2.7rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: solid 7px transparent;
+    position: relative;
+    z-index: 1;
+}
+
+#save_prof_image_btn::before {
+    content: "";
+    border-radius: 0.5rem;
+    position: absolute;
+    background-color: #212121;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: all 0.5s;
+  }
+
+#save_prof_image_btn:hover::before {
+    transform: scaleX(1);
+}
+
+#save_prof_image_btn:hover {
+    border: solid 7px #F2B500;
+    color: #f2f2f2;
+}
+
+.edit_prof_upper_right{
+    display: flex;
+    flex-direction: column;
+    width: 31.25rem;
+    height: 100%;
+    gap: 1rem;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+#edit_prof_user_id_sec{
+    padding-left: 1rem;
+    display: flex;
+    font-size: 2rem;
+    font-family: gilroyBold;
+    color: #1E1E28;
+    background-color: #F7D56F;
+    height: 15%;
+    width: 100%;
+    border-radius: 0.5rem;
+    border-top-right-radius: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#edit_prof_user_id_save{
+    all: initial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: gilroyBold;
+    background-color: #F2B500;
+    color: #212121;
+    font-size: 2.5rem;
+    padding: 0.8rem 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: solid 7px transparent;
+    position: relative;
+    z-index: 1;
+}
+
+#edit_prof_user_id_save::before {
+    content: "";
+    border-radius: 0.5rem;
+    position: absolute;
+    background-color: #212121;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: all 0.5s;
+  }
+
+#edit_prof_user_id_save:hover::before {
+    transform: scaleX(1);
+}
+
+#edit_prof_user_id_save:hover {
+    border: solid 7px #F2B500;
+    color: #f2f2f2;
+}
+
+#prof_user_bio{
+    padding-left: 1rem;
+    display: flex;
+    font-size: 1rem;
+    font-family: gilroyBold;
+    color: #1E1E28;
+    background-color: #F7D56F;
+    height: 41%;
+    width: 100%;
+    border-radius: 0.5rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#bio_save_btn{
+    all: initial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: gilroyBold;
+    background-color: #F2B500;
+    color: #212121;
+    font-size: 2.5rem;
+    padding: 0.8rem 2rem;
+    border-radius: 0.5rem;
+    border-bottom-right-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: solid 7px transparent;
+    position: relative;
+    z-index: 1;
+}
+
+#bio_save_btn::before {
+    content: "";
+    border-radius: 0.5rem;
+    border-bottom-right-radius: 2rem;
+    position: absolute;
+    background-color: #212121;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: all 0.5s;
+  }
+
+#bio_save_btn:hover::before {
+    transform: scaleX(1);
+}
+
+#bio_save_btn:hover {
+    border: solid 7px #F2B500;
+    color: #f2f2f2;
+}
+
+.edit_prof_lower_half{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+#prof_save_btn{
+    all: initial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: gilroyBold;
+    background-color: #f2f2f2;
+    color: #F2B500;
+    font-size: 2.5rem;
+    padding: 0.8rem 4rem;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: solid 7px transparent;
+    position: relative;
+    z-index: 1;
+}
+
+#prof_save_btn::before {
+    content: "";
+    border-radius: 3rem;
+    position: absolute;
+    background-color: #212121;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: all 0.5s;
+  }
+
+#prof_save_btn:hover::before {
+    transform: scaleX(1);
+}
+
+#prof_save_btn:hover {
+    border: solid 7px #F2B500;
+    color: #f2f2f2;
+}

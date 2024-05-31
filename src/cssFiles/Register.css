@@ -1,0 +1,174 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: gilroy;
+    src: url('../fonts/Gilroy.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: gilroyBolder;
+    src: url('../fonts/gilroyBolder.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: gilroyBold;
+    src: url('../fonts/gilroyBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: gilroyMedium;
+    src: url('../fonts/gilroyMedium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: gilroyBoldest;
+    src: url('../fonts/gilroyBoldest.ttf') format('truetype');
+}
+@font-face {
+    font-family: gilroyThin;
+    src: url('../fonts/gilroyThin.ttf') format('truetype');
+}
+@font-face {
+    font-family: gilroyLight;
+    src: url('../fonts/gilroyLight.ttf') format('truetype');
+}
+
+.register_wrapper{
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: end;
+}
+
+.register_logo_set{
+    display: flex;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    z-index: 1;
+    color: white;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+#register_site_logo{
+    width: 4rem;
+    color: white;
+    cursor: pointer;
+}
+
+#register_logo_text{
+    font-family: gilroyBold;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire container */
+}
+
+.register_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.5rem;
+    min-height: 44.3125rem;
+    margin: 0 5rem;
+    background: rgba(255, 255, 255, 0.43);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    padding: 2.5625rem;
+}
+
+#register_heading{
+    color: #F7B900;
+    font-family: gilroyBold;
+    font-size: 2rem;
+    margin-bottom: 1.5625rem;
+}
+
+#reg_form{
+    width: 100%;
+}
+
+.register_top_headings{
+    font-size: 1rem;
+    color: #f2f2f2;
+    font-family: gilroyThin;
+}
+
+.register_input_fields{
+    all: initial;
+    font-family: gilroy;
+    border-radius: 0.5rem;
+    background: rgba(255, 255, 255, 0.50);
+    backdrop-filter: blur(10px);
+    width: 96.5%;
+    height: 2.5rem;
+    caret-color: #a37a00;
+    margin-bottom: 0.875rem;
+    margin-top: 0.4375rem;
+    padding-left: 1rem;
+}
+
+#sign_up_btn{
+    all: initial;
+    display: flex;
+    width: 100%;
+    height: 2.5rem;
+    margin-top: 1rem;
+    background-color: #F7B500;
+    color: black;
+    font-family: gilroyBold;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    margin-bottom: 1.875rem;
+    cursor: pointer;
+}
+
+#login_direct_text{
+    color: #f2f2f2;
+    font-size: 1.5rem;
+    font-family: gilroy;
+    margin-bottom: 1.5625rem;
+}
+
+#line_above_google_auth_register{
+    width: 100%;
+    height: 1px;
+    background-color: #313131;
+    margin-bottom: 0.9375rem;
+}
+
+#signup_with_google_btn{
+    all: initial;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 4.75rem;
+    width: 100%;
+    background-color: #F2B500;
+    font-size: 1.5rem;
+    font-family: gilroyBold;
+    color: #0A0A14;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+
